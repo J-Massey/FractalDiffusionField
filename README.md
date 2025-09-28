@@ -1,7 +1,7 @@
 # Fractal Diffusion Field
 
 Generate 2D multifractal random fields directly from the lognormal statistics of
-Warnecke et al. (2024), *An ensemble of Gaussian fields with multifractal
+Warnecke et al. (2025), *An ensemble of Gaussian fields with multifractal
 statistics for turbulence* (arXiv:2509.19622). This package integrates the
 probability-flow ODE associated with a variance-preserving diffusion SDE whose
 score is analytic, so no neural training is required.
@@ -12,7 +12,7 @@ score is analytic, so no neural training is required.
 - Deterministic diffusion sampler that produces exact Gaussian-mixture draws for
   each mixture latent.
 - CLI for fast experimentation plus a Python API for deeper integration.
-- Matplotlib helper that saves publication-ready images of sampled fields.
+- Matplotlib helper that saves images of sampled fields.
 - Tested with Python 3.9+; ships with pytest-based regression checks.
 
 ## Installation
