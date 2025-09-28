@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractal-diffusion-field"
+version = "0.1.0"
+description = "Generate multifractal diffusion fields directly from analytic statistics."
+readme = "README.md"
+authors = [
+  {name = "Jonathan Massey"},
+  {name = "Contributors"},
+]
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "matplotlib>=3.6",
+]
+keywords = ["multifractal", "diffusion", "stochastic", "simulation", "turbulence"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Intended Audience :: Science/Research",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-cov>=4.0",
+  "ruff>=0.6",
+]
+
+[project.urls]
+Homepage = "https://example.com/fractal-diffusion-field"
+Repository = "https://github.com/example/fractal-diffusion-field"
+
+[project.scripts]
+fractal-diffusion-field = "fractal_diffusion_field.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fractal_diffusion_field*"]
