@@ -1,7 +1,7 @@
 # Fractal Diffusion Field
 
 Generate 2D multifractal random fields directly from the lognormal statistics of
-Warnecke et al. (2025), *An ensemble of Gaussian fields with multifractal
+Warnecke et al. (2024), *An ensemble of Gaussian fields with multifractal
 statistics for turbulence* (arXiv:2509.19622). This package integrates the
 probability-flow ODE associated with a variance-preserving diffusion SDE whose
 score is analytic, so no neural training is required.
@@ -14,6 +14,21 @@ score is analytic, so no neural training is required.
 - CLI for fast experimentation plus a Python API for deeper integration.
 - Matplotlib helper that saves images of sampled fields.
 - Tested with Python 3.9+; ships with pytest-based regression checks.
+
+## Demo
+
+A few samples generated with identical grid resolution but varied statistics.
+
+Regenerate these figures with `python examples/generate_demo_images.py`.
+
+![Baseline lognormal field](docs/assets/demo_baseline.png)
+*Baseline lognormal parameters (seed 42) with moderate intermittency.*
+
+![High intermittency](docs/assets/demo_sigmah035.png)
+*Stronger intermittency (`sigma_h = 0.35`) sharpens gradients and small-scale bursts.*
+
+![Short integral scale](docs/assets/demo_Lint01.png)
+*Reducing the integral scale (`L_int = 0.10`) concentrates variance into finer structures.*
 
 ## Installation
 
