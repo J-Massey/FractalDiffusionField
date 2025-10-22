@@ -1,7 +1,7 @@
 # Fractal Diffusion Field
 
 Generate 2D multifractal random fields directly from the lognormal statistics of
-Warnecke et al. (2024), *An ensemble of Gaussian fields with multifractal
+Warnecke et al. (2025), *An ensemble of Gaussian fields with multifractal
 statistics for turbulence* (arXiv:2509.19622). This package integrates the
 probability-flow ODE associated with a variance-preserving diffusion SDE whose
 score is analytic, so no neural training is required.
